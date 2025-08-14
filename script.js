@@ -214,7 +214,24 @@ skal returnere "whao is ohe ptino tf ohis?"
 ******************************************************************************/
 
 function doubleSwap(string, charA, charB) {
-  // Skriv koden for oppgave 4 her
+  let result = [];
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === charA) {
+      result += charB;
+    } else if (string[i] === charB) {
+      result += charA;
+    } else {
+      result += string[i];
+    }
+  }
+
+  return result;
+}
+
+console.log(doubleSwap("m#ybe #nother #ppro#ch is necess#ry", "#", "a"));
+console.log(doubleSwap("this is a string", "i", "s"));
+console.log(doubleSwap("what is the point of this?", "o", "t"));
 }
 
 /******************************************************************************
@@ -260,3 +277,4 @@ const greetings = [
 ];
 
 // Skriv koden for oppgave 5 her
+
